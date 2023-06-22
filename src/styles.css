@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #6a5a60;
+  background-color: #170b1b;
 }
 
 .container {
@@ -8,10 +8,20 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/hero-img.jpg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
@@ -55,7 +65,45 @@ header a {
   background-color: white;
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(rgba(16, 7, 22, 0.9), rgba(16, 7, 22, 0.9)),
+    url(../images/tahoe-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
